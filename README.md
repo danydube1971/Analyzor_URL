@@ -3,6 +3,7 @@ Permet d'analyser la validité des liens web contenu dans un fichier HTML
 
 ![Analyzor_URL](https://github.com/danydube1971/Analyzor_URL/assets/74633244/8e7dcef6-58bf-4b3f-9d9d-2c9890048859)
 
+### Testé dans Linux Mint 21.3 sous Python3.11
 
 Le script Analyzor_URL.py est un outil graphique permettant de vérifier la validité des liens dans un fichier HTML. 
 Voici un guide étape par étape pour vous aider à utiliser cet outil efficacement.
