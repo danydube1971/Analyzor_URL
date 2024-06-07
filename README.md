@@ -51,7 +51,7 @@ Pour démarrer le script, ouvrez un terminal et exécutez la commande suivante :
      
         ◦ Les liens cassés sont marqués comme "LIEN CASSÉ : [Description]" avec un fond rouge clair pour les différencier visuellement.
      
-        ◦ Vous pouvez double-cliquer sur un lien dans la colonne URL pour l'ouvrir dans votre navigateur par défaut. *Dû à la complexité de l’analyse de certains serveurs DNS, veuillez vérifier quand même les « Liens cassés » en double-cliquant sur l’url.*
+        ◦ Vous pouvez double-cliquer sur un lien dans la colonne URL pour l'ouvrir dans votre navigateur par défaut. **Dû à la complexité de l’analyse de certains serveurs DNS, veuillez vérifier quand même les « Liens cassés » en double-cliquant sur l’url.**
  
   8. Arrêter l'Analyse (optionnel) :
      
