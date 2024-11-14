@@ -2,6 +2,9 @@
 
 Bienvenue dans Analyzor Url, une application Python développée avec PyQt5 qui permet d'analyser et de vérifier la validité des liens contenus dans vos fichiers HTML. Cette application offre une interface graphique intuitive pour charger des fichiers HTML, analyser leurs liens et exporter les résultats.
 
+![Analyzor_Url](https://github.com/user-attachments/assets/e099f1cc-e072-4bdd-99de-49e926087651)
+
+
 ## 🚀 Fonctionnalités
 
 - Chargement et analyse de fichiers HTML
