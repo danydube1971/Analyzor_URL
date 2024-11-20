@@ -25,8 +25,8 @@ Le **Vérificateur de Liens HTML** est une application conviviale conçue pour a
 
 1. **Cloner le Dépôt**
     ```bash
-    git clone [https://github.com/votre-utilisateur/votre-depot.git](https://github.com/danydube1971/Analyzor_URL)
-    cd votre-depot
+    git clone https://github.com/danydube1971/Analyzor_URL.git
+    cd Analyzor_Url
     ```
 
 2. **Installer les Dépendances**
