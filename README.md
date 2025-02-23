@@ -1,4 +1,4 @@
-**Analyzor_Urls_V9.py** est une application qui analyse les liens contenus dans un fichier HTML. Grâce à une interface conviviale développée avec PyQt5, l'application permet de charger un fichier, de vérifier la validité des URLs et de visualiser les redirections ainsi que les erreurs potentielles.
+**Analyzor_Urls_V5.py** est une application qui analyse les liens contenus dans un fichier HTML. Grâce à une interface conviviale développée avec PyQt5, l'application permet de charger un fichier, de vérifier la validité des URLs et de visualiser les redirections ainsi que les erreurs potentielles.
 
 L'objectif est de vous aider à identifier rapidement les liens cassés ou problématiques dans vos pages HTML.
 
