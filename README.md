@@ -55,7 +55,7 @@ Utilisation
 Pour démarrer l'application, exécutez le script depuis votre terminal :
 
 ```
-python Analyzor_Urls.py
+python Analyzor_Urls_V5.py
 ```
 
 L'interface graphique s'ouvrira et vous proposera plusieurs options.
