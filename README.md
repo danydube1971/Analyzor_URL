@@ -1,102 +1,132 @@
-# Vérificateur de Liens HTML
+**Analyzor_Urls_V9.py** est une application qui analyse les liens contenus dans un fichier HTML. Grâce à une interface conviviale développée avec PyQt5, l'application permet de charger un fichier, de vérifier la validité des URLs et de visualiser les redirections ainsi que les erreurs potentielles.
 
-![Analyzor_Url](https://github.com/user-attachments/assets/a03d8510-1733-4ef2-80cf-14007db2bfe8)
+L'objectif est de vous aider à identifier rapidement les liens cassés ou problématiques dans vos pages HTML.
 
-
-Le **Vérificateur de Liens HTML** est une application conviviale conçue pour analyser et identifier les liens brisés dans vos fichiers HTML. Idéal pour les développeurs web et les gestionnaires de contenu souhaitant assurer la qualité des liens sur leurs sites.
-
-## Fonctionnalités
-
-- **Analyse Rapide** : Scanne tous les liens présents dans un fichier HTML.
-- **Identification des Liens Cassés** : Détecte les liens inaccessibles ou problématiques.
-- **Filtrage Avancé** : Affiche uniquement les liens cassés sur demande.
-- **Recherche Intelligente** : Trouve rapidement des liens spécifiques.
-- **Exportation des Résultats** : Sauvegarde les résultats au format CSV.
-- **Vérification SSL** : Option pour vérifier les certificats SSL des liens.
-
-## Installation
-
-### Prérequis
-
-- **Python 3.6+**
-- **pip** (Gestionnaire de paquets Python)
-
-### Étapes
-
-1. **Cloner le Dépôt**
-    ```bash
-    git clone https://github.com/danydube1971/Analyzor_URL.git
-    cd Analyzor_Url
-    ```
-
-2. **Installer les Dépendances**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *Si `requirements.txt` n'est pas disponible, installez manuellement :*
-    ```bash
-    pip install requests beautifulsoup4 pyqt5
-    ```
-
-3. **Lancer l'Application**
-    ```bash
-    python Analyzor_Url_V4
-    ```
-
-## Utilisation
-
-1. **Charger un Fichier HTML**
-    - Cliquez sur **"Charger un fichier HTML"**.
-    - Sélectionnez le fichier HTML à analyser.
-
-2. **Analyser les Liens**
-    - L'analyse démarre automatiquement après le chargement.
-    - La barre de progression indique l'avancement.
-
-3. **Afficher les Résultats**
-    - **Nombre de Liens** : Affiche le total des liens analysés.
-    - **Nombre de Liens Cassés** : Indique combien de liens sont brisés.
-    - **Tableau des Liens** : Liste détaillée avec Description, URL et Statut.
-
-4. **Filtrer les Liens Cassés**
-    - Cochez **"Afficher seulement les liens cassés"** pour ne voir que les liens problématiques.
-
-5. **Rechercher des Liens**
-    - Utilisez la barre de recherche pour trouver des liens spécifiques.
-
-6. **Exporter les Résultats**
-    - Cliquez sur **"Exporter les résultats"**.
-    - Choisissez l'emplacement et le nom du fichier.
-    - L'extension `.csv` est ajoutée automatiquement si non spécifiée.
-
-7. **Arrêter l'Analyse**
-    - Cliquez sur **"Stop"** pour interrompre l'analyse en cours.
-
-## Options Avancées
-
-- **Vérification des Certificats SSL**
-    - Activez la case **"Vérifier les certificats SSL"** pour renforcer la vérification des liens sécurisés.
-
-## Résolution des Problèmes
-
-- **L'application ne se lance pas** :
-    - Vérifiez que Python est installé et ajouté au PATH.
-    - Assurez-vous que toutes les dépendances sont correctement installées.
-
-- **Les liens ne sont pas analysés correctement** :
-    - Vérifiez le format de votre fichier HTML.
-    - Assurez-vous que les liens sont dans les balises `<a>` avec l'attribut `href`.
-
-## Contribuer
-
-Les contributions sont les bienvenues ! Pour contribuer :
-
-1. Fork le dépôt.
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/nom-feature`).
-3. Committez vos changements (`git commit -m 'Ajout de nouvelle fonctionnalité'`).
-4. Push vers la branche (`git push origin feature/nom-feature`).
-5. Ouvrez une Pull Request.
+![Analyzor_Urls](https://github.com/user-attachments/assets/c7b87ddf-494b-4495-8d0f-3e9de5680197)
 
 
+* * * * *
 
+Fonctionnalités
+---------------
 
+-   **Analyse des liens :** Vérifie la validité des URLs en effectuant des requêtes HTTP (HEAD et GET) avec gestion des redirections.
+
+-   **Interface graphique conviviale :** Affiche les résultats dans une table avec des indicateurs visuels (couleurs pour les liens cassés).
+
+-   **Export des résultats :** Possibilité d'exporter les données analysées en formats CSV et HTML.
+
+-   **Options de filtrage :** Affiche uniquement les liens cassés ou filtre selon une recherche textuelle.
+
+-   **Gestion des certificats SSL :** Option pour activer ou désactiver la vérification des certificats SSL.
+
+* * * * *
+
+Prérequis
+---------
+
+Avant de lancer l'application, assurez-vous d'avoir installé :
+
+-   **Python 3.6+**
+
+-   **Bibliothèques Python suivantes :**
+
+    -   [Requests](https://pypi.org/project/requests/)
+
+    -   [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/)
+
+    -   [PyQt5](https://pypi.org/project/PyQt5/)
+
+    -   [urllib3](https://pypi.org/project/urllib3/)
+
+Vous pouvez installer ces dépendances via pip :
+
+```
+pip install requests beautifulsoup4 PyQt5 urllib3
+```
+
+* * * * *
+
+Utilisation
+-----------
+
+### Lancer l'application
+
+Pour démarrer l'application, exécutez le script depuis votre terminal :
+
+```
+python Analyzor_Urls_V9.py
+```
+
+L'interface graphique s'ouvrira et vous proposera plusieurs options.
+
+### Charger un fichier HTML
+
+-   Cliquez sur le bouton **"Charger un fichier HTML"**.
+
+-   Sélectionnez le fichier HTML que vous souhaitez analyser depuis votre explorateur de fichiers.
+
+### Analyse des liens
+
+-   Une fois le fichier chargé, le script analyse automatiquement tous les liens (`<a href="...">`).
+
+-   Vous verrez :
+
+    -   Le **nombre total de liens** à analyser.
+
+    -   Un **progress bar** indiquant l'avancement de l'analyse.
+
+    -   La table des résultats affichant :
+
+        -   **Description** (texte du lien)
+
+        -   **URL** vérifiée
+
+        -   **Statut** de l'URL (code HTTP et indication de validité)
+
+        -   **Redirections** (chaîne des URLs en cas de redirection)
+
+-   Les liens cassés ou invalides sont mis en évidence (fond coloré en rouge pâle).
+
+### Exporter les résultats
+
+Deux options d'export sont disponibles :
+
+1.  **Exporter en CSV :**
+
+    -   Cliquez sur le bouton **"Exporter en CSV"**.
+
+    -   Choisissez le chemin et le nom du fichier.
+
+    -   Le fichier CSV sera généré avec les colonnes : Description, URL, Statut, Redirections.
+
+2.  **Exporter en HTML :**
+
+    -   Cliquez sur le bouton **"Exporter en HTML"**.
+
+    -   Choisissez le chemin et le nom du fichier.
+
+    -   Un fichier HTML sera généré pour une consultation plus conviviale dans un navigateur.
+
+* * * * *
+
+Options et Paramètres
+---------------------
+
+-   **Afficher seulement les liens cassés :**
+
+    -   Activez cette option via la case à cocher pour filtrer et n'afficher que les liens problématiques dans la table.
+
+-   **Vérifier les certificats SSL :**
+
+    -   Vous pouvez activer ou désactiver la vérification SSL selon vos besoins.
+
+-   **Barre de recherche :**
+
+    -   Utilisez la barre de recherche pour filtrer les liens en fonction de leur description ou URL.
+
+-   **Bouton Stop :**
+
+    -   Si vous souhaitez interrompre l'analyse en cours, cliquez sur le bouton **"Stop"**.
+
+* * * * *
